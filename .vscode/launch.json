@@ -14,7 +14,7 @@
             "internalConsoleOptions": "openOnSessionStart",
             "serverReadyAction": {
                 "action": "openExternally",
-                "pattern": "Overriding address\\(es\\) \\'(https?:\\S+)\\'",
+                "pattern": "Overriding address\\(es\\) \\'(https?:\\S+)\\'"
             }
         },
         {

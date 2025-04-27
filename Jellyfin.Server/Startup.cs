@@ -124,6 +124,13 @@ namespace Jellyfin.Server
                 })
                 .ConfigurePrimaryHttpMessageHandler(defaultHttpClientHandlerDelegate);
 
+            services.AddHttpClient("TorrentApi", c =>
+        {
+            c.DefaultRequestHeaders.UserAgent.Add(productHeader);
+            c.DefaultRequestHeaders.Accept.Add(acceptJsonHeader);
+        })
+        .ConfigurePrimaryHttpMessageHandler(defaultHttpClientHandlerDelegate);
+
             services.AddHealthChecks()
                 .AddCheck<DbContextFactoryHealthCheck<JellyfinDbContext>>(nameof(JellyfinDbContext));
 
