@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+  jellyfin:
+    image: jellyfin-torrent:latest
+    container_name: jellyfin
+    ports:
+      - "8096:8096"  # Main web interface
+      - "8920:8920"  # HTTPS interface
+      - "1900:1900/udp"  # Service discovery
+    volumes:
+      - ./config:/config
+      - ./cache:/cache
+      - E:/movies:/media  # Changed to E:/movies
+      - ./temp:/tmp/jellyfin  # Add this line - volume for temp directory
+    restart: unless-stopped
+    environment:
+      - JELLYFIN_PublishedServerUrl=http://localhost:8096  # Change for remote access
+      - JELLYFIN_CACHE_DIR=/cache
+      - JELLYFIN_DATA_DIR=/config
+      - JELLYFIN_LOG_DIR=/config/log
+      - JELLYFIN_FFMPEG=/usr/bin/ffmpeg
+
+  qbittorrent:
+    image: linuxserver/qbittorrent:latest
+    container_name: qbittorrent
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - WEBUI_PORT=8099
+      - WEBUI_ADDRESS=0.0.0.0
+      - WEBUI_ENABLED=true  # Disable authentication
+    volumes:
+      - ./qbittorrent/config:/config
+      - E:/movies:/downloads
+    ports:
+      - "8099:8099"
+      - "6881:6881"
+      - "6881:6881/udp"
+    restart: unless-stopped

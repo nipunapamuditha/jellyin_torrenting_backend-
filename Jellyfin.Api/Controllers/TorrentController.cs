@@ -29,7 +29,7 @@ public class TorrentController : BaseJellyfinApiController
 {
     private readonly ILibraryManager _libraryManager;
     private readonly IHttpClientFactory _httpClientFactory;
-    private readonly string _torrentServerUrl = "http://localhost:8099";
+    private readonly string _torrentServerUrl = "http://qbittorrent:8099";
 
     /// <summary>
     /// Initializes a new instance of the <see cref="TorrentController"/> class.
