@@ -42,7 +42,7 @@ pipeline {
                     ssh -o StrictHostKeyChecking=no jenkins@${DEPLOY_SERVER} "sudo rm -rf ${DEPLOY_DIR} && sudo mv ${DEPLOY_DIR}_temp ${DEPLOY_DIR}"
                     
                     # Start containers with docker-compose
-                    ssh -o StrictHostKeyChecking=no jenkins@${DEPLOY_SERVER} "cd ${DEPLOY_DIR} && sudo docker-compose up -d"
+                    ssh -o StrictHostKeyChecking=no jenkins@${DEPLOY_SERVER} "cd ${DEPLOY_DIR} && sudo docker compose up -d"
                     
                     # Check running containers
                     ssh -o StrictHostKeyChecking=no jenkins@${DEPLOY_SERVER} "sudo docker ps | grep jellyfin"
