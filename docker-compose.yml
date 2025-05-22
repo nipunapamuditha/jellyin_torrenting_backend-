@@ -11,7 +11,7 @@ services:
     volumes:
       - ./config:/config
       - ./cache:/cache
-      - /home/nipuna/Personal_Projects/Personal Projects/media_folder:/media  # Changed to E:/movies
+      - /mnt/media:/media  # Changed to E:/movies
       - ./temp:/tmp/jellyfin  # Add this line - volume for temp directory
     restart: unless-stopped
     environment:
@@ -32,7 +32,7 @@ services:
       - WEBUI_ENABLED=true  # Disable authentication
     volumes:
       - ./qbittorrent/config:/config
-      - /home/nipuna/Personal_Projects/Personal Projects/media_folder:/media 
+      - /mnt/media:/media 
 
     ports:
       - "8099:8099"
