@@ -1,0 +1,192 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Jellyfin.Extensions/10.11.0": {
+        "dependencies": {
+          "Diacritics": "3.3.29",
+          "ICU4N.Transliterator": "60.1.0-alpha.356"
+        },
+        "runtime": {
+          "Jellyfin.Extensions.dll": {}
+        }
+      },
+      "Diacritics/3.3.29": {
+        "runtime": {
+          "lib/netstandard2.1/Diacritics.dll": {
+            "assemblyVersion": "3.3.29.0",
+            "fileVersion": "3.3.29.0"
+          }
+        }
+      },
+      "ICU4N/60.1.0-alpha.356": {
+        "dependencies": {
+          "J2N": "2.0.0",
+          "Microsoft.Extensions.Caching.Memory": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/ICU4N.dll": {
+            "assemblyVersion": "60.0.0.0",
+            "fileVersion": "60.1.0.0"
+          }
+        }
+      },
+      "ICU4N.Transliterator/60.1.0-alpha.356": {
+        "dependencies": {
+          "ICU4N": "60.1.0-alpha.356"
+        },
+        "runtime": {
+          "lib/netstandard2.0/ICU4N.Transliterator.dll": {
+            "assemblyVersion": "60.0.0.0",
+            "fileVersion": "60.1.0.0"
+          }
+        }
+      },
+      "J2N/2.0.0": {
+        "runtime": {
+          "lib/net6.0/J2N.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "Microsoft.Extensions.Caching.Abstractions/2.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.17205"
+          }
+        }
+      },
+      "Microsoft.Extensions.Caching.Memory/2.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "2.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0",
+          "Microsoft.Extensions.Options": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.17205"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.17205"
+          }
+        }
+      },
+      "Microsoft.Extensions.Options/2.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0",
+          "Microsoft.Extensions.Primitives": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.17205"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/2.0.0": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.4.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.17205"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.4.0": {}
+    }
+  },
+  "libraries": {
+    "Jellyfin.Extensions/10.11.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Diacritics/3.3.29": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yrbxg/3T2af17np2XIjRbRXWM1OdtwJof9xg3qRj7D3s9AYkuEpD4UMCsNvnj//GHvzN9hw79ceh4z8Fhlvvhw==",
+      "path": "diacritics/3.3.29",
+      "hashPath": "diacritics.3.3.29.nupkg.sha512"
+    },
+    "ICU4N/60.1.0-alpha.356": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YMZtDnjcqWzziOKiE7w6Ma7Rl5vuFDxzOsUlHh1QyfghbNEIZQOLRs9MMfwCWAjX6n9UitrF6vLXy55Z5q+4Fg==",
+      "path": "icu4n/60.1.0-alpha.356",
+      "hashPath": "icu4n.60.1.0-alpha.356.nupkg.sha512"
+    },
+    "ICU4N.Transliterator/60.1.0-alpha.356": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lFOSO6bbEtB6HkWMNDJAq+rFwVyi9g6xVc5O/2xHa6iZnV7wLVDqCbaQ4W4vIeBSQZAafqhxciaEkmAvSdzlCg==",
+      "path": "icu4n.transliterator/60.1.0-alpha.356",
+      "hashPath": "icu4n.transliterator.60.1.0-alpha.356.nupkg.sha512"
+    },
+    "J2N/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-M5bwDajAARZiyqupU+rHQJnsVLxNBOHJ8vKYHd8LcLIb1FgLfzzcJvc31Qo5Xz/GEHFjDF9ScjKL/ks/zRTXuA==",
+      "path": "j2n/2.0.0",
+      "hashPath": "j2n.2.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Caching.Abstractions/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kGMEV53Od1ES0BDh7OOKbTW9Zu5dbbQ72yI936dvvbHlde3puuq/WRKAccFgcB2PuRjox1HFhA9+t53RYqfuEA==",
+      "path": "microsoft.extensions.caching.abstractions/2.0.0",
+      "hashPath": "microsoft.extensions.caching.abstractions.2.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Caching.Memory/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NqvVdYLbX7N2J2Wz9y3zjhE66JRdROiZZsGhA2u4a9IcIq/jzINC/cLM96BHA+TSOZFPxVdWneqB6/yt9u846A==",
+      "path": "microsoft.extensions.caching.memory/2.0.0",
+      "hashPath": "microsoft.extensions.caching.memory.2.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eUdJ0Q/GfVyUJc0Jal5L1QZLceL78pvEM9wEKcHeI24KorqMDoVX+gWsMGLulQMfOwsUaPtkpQM2pFERTzSfSg==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/2.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Options/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sAKBgjl2gWsECBLLR9K54T7/uZaP2n9GhMYHay/oOLfvpvX0+iNAlQ2NJgVE352C9Fs5CDV3VbNTK8T2aNKQFA==",
+      "path": "microsoft.extensions.options/2.0.0",
+      "hashPath": "microsoft.extensions.options.2.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Primitives/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ukg53qNlqTrK38WA30b5qhw0GD7y3jdI9PHHASjdKyTcBHTevFM2o23tyk3pWCgAV27Bbkm+CPQ2zUe1ZOuYSA==",
+      "path": "microsoft.extensions.primitives/2.0.0",
+      "hashPath": "microsoft.extensions.primitives.2.0.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9dLLuBxr5GNmOfl2jSMcsHuteEg32BEfUotmmUkmZjpR3RpVHE8YQwt0ow3p6prwA1ME8WqDVZqrr8z6H8G+Kw==",
+      "path": "system.runtime.compilerservices.unsafe/4.4.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.4.0.nupkg.sha512"
+    }
+  }
+}

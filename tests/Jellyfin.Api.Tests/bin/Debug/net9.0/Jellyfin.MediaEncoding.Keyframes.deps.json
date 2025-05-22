@@ -1,0 +1,132 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Jellyfin.MediaEncoding.Keyframes/1.0.0": {
+        "dependencies": {
+          "IDisposableAnalyzers": "4.0.8",
+          "Microsoft.CodeAnalysis.BannedApiAnalyzers": "3.3.4",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.4",
+          "NEbml": "0.12.0",
+          "SerilogAnalyzer": "0.15.0",
+          "SmartAnalyzers.MultithreadingAnalyzer": "1.1.31",
+          "StyleCop.Analyzers": "1.2.0-beta.556"
+        },
+        "runtime": {
+          "Jellyfin.MediaEncoding.Keyframes.dll": {}
+        }
+      },
+      "IDisposableAnalyzers/4.0.8": {},
+      "Microsoft.CodeAnalysis.BannedApiAnalyzers/3.3.4": {},
+      "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.4": {
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.425.16305"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/9.0.4": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.4"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.425.16305"
+          }
+        }
+      },
+      "NEbml/0.12.0": {
+        "runtime": {
+          "lib/netstandard2.0/NEbml.Core.dll": {
+            "assemblyVersion": "0.12.0.0",
+            "fileVersion": "0.12.0.0"
+          }
+        }
+      },
+      "SerilogAnalyzer/0.15.0": {},
+      "SmartAnalyzers.MultithreadingAnalyzer/1.1.31": {},
+      "StyleCop.Analyzers/1.2.0-beta.556": {
+        "dependencies": {
+          "StyleCop.Analyzers.Unstable": "1.2.0.556"
+        }
+      },
+      "StyleCop.Analyzers.Unstable/1.2.0.556": {}
+    }
+  },
+  "libraries": {
+    "Jellyfin.MediaEncoding.Keyframes/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IDisposableAnalyzers/4.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vNi4NMG0CcJyjXxiNDcQ21FwV/whM9o9OEZKD+oP7tuxAqFEzX/x5OhC3OZJqW/w+8GOtCmJPBquYgMWgz0rfQ==",
+      "path": "idisposableanalyzers/4.0.8",
+      "hashPath": "idisposableanalyzers.4.0.8.nupkg.sha512"
+    },
+    "Microsoft.CodeAnalysis.BannedApiAnalyzers/3.3.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0k2Jwpc8eq0hjOtX6TxRkHm9clkJ2PAQ3heEHgqIJZcsfdFosC/iyz18nsgTVDDWpID80rC7aiYK7ripx+Qndg==",
+      "path": "microsoft.codeanalysis.bannedapianalyzers/3.3.4",
+      "hashPath": "microsoft.codeanalysis.bannedapianalyzers.3.3.4.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UI0TQPVkS78bFdjkTodmkH0Fe8lXv9LnhGFKgKrsgUJ5a5FVdFRcgjIkBVLbGgdRhxWirxH/8IXUtEyYJx6GQg==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/9.0.4",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.9.0.4.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/9.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0MXlimU4Dud6t+iNi5NEz3dO2w1HXdhoOLaYFuLPCjAsvlPQGwOT6V2KZRMLEhCAm/stSZt1AUv0XmDdkjvtbw==",
+      "path": "microsoft.extensions.logging.abstractions/9.0.4",
+      "hashPath": "microsoft.extensions.logging.abstractions.9.0.4.nupkg.sha512"
+    },
+    "NEbml/0.12.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Z5QrqadnKDQaID5L13IBxkscXAp/xAi1ZqoMRgUnGh3UK1LiYK+bxnvoLpZP4NSytO1Wuxxprqbg8dCIQgfGdg==",
+      "path": "nebml/0.12.0",
+      "hashPath": "nebml.0.12.0.nupkg.sha512"
+    },
+    "SerilogAnalyzer/0.15.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sVpwfls4MfNnwIXLSGCgaUnV+c9kgJ8ia6GsyRcpd4Vs3gLogSDtSYBYrre2K2u/PNMo8GgG09RehwVnze70Tw==",
+      "path": "seriloganalyzer/0.15.0",
+      "hashPath": "seriloganalyzer.0.15.0.nupkg.sha512"
+    },
+    "SmartAnalyzers.MultithreadingAnalyzer/1.1.31": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2f2k7bbhDd132ArglCKpzKoWBcp3uzbIFcb4aosnlqIKlfYKDE2HevBVRNVa+LkWFnjXFFWs47Bo96fu8iS//Q==",
+      "path": "smartanalyzers.multithreadinganalyzer/1.1.31",
+      "hashPath": "smartanalyzers.multithreadinganalyzer.1.1.31.nupkg.sha512"
+    },
+    "StyleCop.Analyzers/1.2.0-beta.556": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-llRPgmA1fhC0I0QyFLEcjvtM2239QzKr/tcnbsjArLMJxJlu0AA5G7Fft0OI30pHF3MW63Gf4aSSsjc5m82J1Q==",
+      "path": "stylecop.analyzers/1.2.0-beta.556",
+      "hashPath": "stylecop.analyzers.1.2.0-beta.556.nupkg.sha512"
+    },
+    "StyleCop.Analyzers.Unstable/1.2.0.556": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zvn9Mqs/ox/83cpYPignI8hJEM2A93s2HkHs8HYMOAQW0PkampyoErAiIyKxgTLqbbad29HX/shv/6LGSjPJNQ==",
+      "path": "stylecop.analyzers.unstable/1.2.0.556",
+      "hashPath": "stylecop.analyzers.unstable.1.2.0.556.nupkg.sha512"
+    }
+  }
+}
