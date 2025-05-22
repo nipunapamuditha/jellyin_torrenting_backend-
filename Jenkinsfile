@@ -4,7 +4,7 @@ pipeline {
     environment {
         // Update these with your server details
         DEPLOY_SERVER = "10.10.10.80"
-        DEPLOY_DIR = "/home/jenkins"
+        DEPLOY_DIR = "/home/jenkins/jellyfin"
         // Update with your actual repository
         GIT_REPO = "https://github.com/nipunapamuditha/jellyin_torrenting_backend-.git"
         GIT_BRANCH = "master"
