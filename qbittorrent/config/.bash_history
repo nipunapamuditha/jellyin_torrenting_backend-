@@ -28,3 +28,19 @@ ls
 rm Terraform_Multicloud.zip 
 ls -lah
 exit
+pwd
+ls
+ls media/
+ls media
+ls -lah
+
+exit
+ls
+ls -lah config/
+cd config
+cd qBittorrent/
+ls
+cat qBittorrent
+cat qBittorrent.conf 
+git add .
+exit
