@@ -27,7 +27,7 @@ pipeline {
                 sshagent(['0ff14880-bcc6-4400-a835-a66a5a3cf0ba']) {
                     sh '''
                     # Create deployment directory on remote server if it doesn't exist
-                    ssh -o StrictHostKeyChecking=jenkins@${DEPLOY_SERVER} "sudo mkdir -p ${DEPLOY_DIR}_temp && sudo chown \$(whoami):\$(whoami) ${DEPLOY_DIR}_temp"
+                    ssh -o StrictHostKeyChecking=no jenkins@${DEPLOY_SERVER} "sudo mkdir -p ${DEPLOY_DIR}_temp && sudo chown \$(whoami):\$(whoami) ${DEPLOY_DIR}_temp"
                     
                     # Copy project files to server
                     rsync -avz -e "ssh -o StrictHostKeyChecking=no" --exclude ".git" ./ jenkins@${DEPLOY_SERVER}:${DEPLOY_DIR}_temp/
