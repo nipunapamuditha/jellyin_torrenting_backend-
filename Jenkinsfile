@@ -6,7 +6,7 @@ pipeline {
         DEPLOY_SERVER = "10.10.10.80"
         DEPLOY_DIR = "/home/jenkins"
         // Update with your actual repository
-        GIT_REPO = "https://github.com/yourusername/jellyin_torrenting_backend-.git"
+        GIT_REPO = "https://github.com/nipunapamuditha/jellyin_torrenting_backend-.git"
         GIT_BRANCH = "master"
     }
     
