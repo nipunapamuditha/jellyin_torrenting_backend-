@@ -33,19 +33,19 @@ pipeline {
                     rsync -avz -e "ssh -o StrictHostKeyChecking=no" --exclude ".git" ./ jenkins@${DEPLOY_SERVER}:${DEPLOY_DIR}_temp/
                     
                     # Build Docker image on remote server
-                    ssh -o StrictHostKeyChecking=no jenkins@${DEPLOY_SERVER} "cd ${DEPLOY_DIR}_temp && docker build -t jellyfin-torrent:latest ."
+                    ssh -o StrictHostKeyChecking=no jenkins@${DEPLOY_SERVER} "cd ${DEPLOY_DIR}_temp && sudo docker build -t jellyfin-torrent:latest ."
                     
                     # Stop existing containers if they exist
-                    ssh -o StrictHostKeyChecking=no jenkins@${DEPLOY_SERVER} "cd ${DEPLOY_DIR} && docker-compose down || true"
+                    ssh -o StrictHostKeyChecking=no jenkins@${DEPLOY_SERVER} "cd ${DEPLOY_DIR} && sudo docker-compose down || true"
                     
                     # Replace old directory with new deployment
                     ssh -o StrictHostKeyChecking=no jenkins@${DEPLOY_SERVER} "sudo rm -rf ${DEPLOY_DIR} && sudo mv ${DEPLOY_DIR}_temp ${DEPLOY_DIR}"
                     
                     # Start containers with docker-compose
-                    ssh -o StrictHostKeyChecking=no jenkins@${DEPLOY_SERVER} "cd ${DEPLOY_DIR} && docker-compose up -d"
+                    ssh -o StrictHostKeyChecking=no jenkins@${DEPLOY_SERVER} "cd ${DEPLOY_DIR} && sudo docker-compose up -d"
                     
                     # Check running containers
-                    ssh -o StrictHostKeyChecking=no jenkins@${DEPLOY_SERVER} "docker ps | grep jellyfin"
+                    ssh -o StrictHostKeyChecking=no jenkins@${DEPLOY_SERVER} "sudo docker ps | grep jellyfin"
                     '''
                 }
             }
