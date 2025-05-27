@@ -42,4 +42,4 @@ VOLUME /cache
 VOLUME /media
 
 # Start Jellyfin using the correct dll
-ENTRYPOINT ["dotnet", "Jellyfin.Server.dll"]
+ENTRYPOINT ["dotnet", "jellyfin.dll"]

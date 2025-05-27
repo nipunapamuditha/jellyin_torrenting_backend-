@@ -11,7 +11,7 @@ services:
     volumes:
       - ./config:/config
       - ./cache:/cache
-      - /home/nipuna/Personal_Projects/Personal Projects/media_folder:/media  # Changed to E:/movies
+      - /home/nipuna/Personal_Projects:/media  # Changed this line to match your media directory
       - ./temp:/tmp/jellyfin  # Add this line - volume for temp directory
     restart: unless-stopped
     environment:
@@ -22,7 +22,7 @@ services:
       - JELLYFIN_FFMPEG=/usr/bin/ffmpeg
 
   qbittorrent:
-    image: linuxserver/qbittorrent:latest
+    image: nipunak/qbittorrent-custom:latest
     container_name: qbittorrent
     environment:
       - PUID=1000
@@ -31,8 +31,7 @@ services:
       - WEBUI_ADDRESS=0.0.0.0
       - WEBUI_ENABLED=true  # Disable authentication
     volumes:
-      - ./qbittorrent/config:/config
-      - /home/nipuna/Personal_Projects/Personal Projects/media_folder:/media 
+      - /home/nipuna/Personal_Projects:/media  # Ensure this matches your media directory
 
     ports:
       - "8099:8099"
